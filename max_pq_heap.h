@@ -15,17 +15,17 @@ private:
 
   bool isMaxHeap()
   {
-    for (int i = 1; i < = n; i++)
+    for (int i = 1; i <= n; i++)
     {
-      if (pq[i] == null)
+      if (pq[i] == NULL)
         return false;
     }
     for (int i = n + 1; i < pq.size(); i++)
     {
-      if (pq[i] != null)
+      if (pq[i] != NULL)
         return false;
     }
-    if (pq[0] != null)
+    if (pq[0] != NULL)
       return false;
     return isMaxHeapOrdered(1);
   }
@@ -48,12 +48,6 @@ public:
     pq.push_back(T());
     n = 0;
     comp = compr;
-  }
-
-  max_pq_heap()
-  {
-    pq.push_back(T());
-    n = 0;
   }
 
   max_pq_heap(const comparator<T> &compr)
@@ -98,7 +92,7 @@ public:
 
   void swim(size_t k)
   {
-    while (k > 1 && less(k / 2, k))
+    while (k > 1 && less(pq, k / 2, k))
     {
       exchange(pq, k, k / 2);
       k = k / 2;
