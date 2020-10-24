@@ -1,7 +1,6 @@
 # CPSC-315
 CSUF Algorithms class Homework Submit
 
-
 ## Code that I translated from Sedgewick's Algorithms 
 https://algs4.cs.princeton.edu/10fundamentals/
 * MergeSort
@@ -11,3 +10,5 @@ https://algs4.cs.princeton.edu/10fundamentals/
 ### Currently working on
 * heapsort
 * MAXPQ
+
+Rest of the code was made by William McCarthy
