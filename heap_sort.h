@@ -4,7 +4,7 @@
 #include <cassert>
 #include "utils.h"
 #include "insertion_sort.h"
-#include <queue>
+#include "array.h"
 
 template <typename T>
 class heap_sort
@@ -34,39 +34,9 @@ private:
       if (!less(arr[k - 1], arr[j - 1], comp))
         break;
       exchange(arr, k - 1, j - 1);
-      k = j
+      k = j;
     }
   }
 };
 
-template <typename t>
-class MaxPQ
-{
-public:
-  MaxPQ(int initCapacity)
-  {
-    pq = new key[initCapacity + 1];
-    n = 0;
-  }
-
-  MaxPQ()
-  {
-    std::priority_queue<t> queue;
-  }
-
-  MaxPq(int initCapacity, const comparator<T> &comp)
-  {
-    this = comp;
-    pq = new key[initCapacity + 1];
-    n = 0;
-  }
-
-  MaxPQ(const comparator<T> &comp)
-  {
-  }
-
-private:
-  T pq;
-  int n;
-};
 #endif
