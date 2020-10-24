@@ -6,9 +6,9 @@ https://algs4.cs.princeton.edu/10fundamentals/
 * MergeSort
 * QuckSort
 * QuickSort3way
+* heapsort
 
 ### Currently working on
-* heapsort
 * MAXPQ
 
 Rest of the code was made by William McCarthy
